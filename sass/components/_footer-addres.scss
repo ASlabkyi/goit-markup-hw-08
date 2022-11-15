@@ -1,0 +1,29 @@
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 70px;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+}
+
+.address-list__link {
+  text-decoration: none;
+  font-style: normal;
+  color: $footer-contacts-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @include transition(color);
+}
+
+.address-list__link_white {
+  color: $color-white;
+}

@@ -1,0 +1,22 @@
+.join-container__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $color-white;
+}
+
+.join-container__text_margin {
+  margin-bottom: 20px;
+}
+
+.icon-list__item_opacity {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-list__link_white {
+  fill: $color-white;
+
+  @include transition(background-color);
+}

@@ -1,0 +1,43 @@
+.advances {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advances__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.advances__item {
+  max-width: 270px;
+}
+
+.advances__icon {
+  height: 120px;
+
+  background-color: $team-section-color;
+  border-radius: 4px;
+}
+
+.advances__icon_margin-flex {
+  @include centeredFlex;
+
+  margin-bottom: 30px;
+}
+
+.advances__subtitle {
+  color: $title-text-color;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advances__subtitle-margin {
+  margin-bottom: 10px;
+}
+
+.advances__text {
+  line-height: 1.7;
+}
