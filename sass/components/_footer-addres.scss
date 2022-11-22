@@ -1,14 +1,28 @@
 .footer-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  column-gap: 70px;
+  @media screen and (min-width: $desktop-bp) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    column-gap: 93px;
+  }
 }
 
 .address-list {
   display: flex;
   flex-direction: column;
-  row-gap: 9px;
+  row-gap: 8px;
+  text-align: center;
+  margin-bottom: 70px;
+
+  @media screen and (min-width: $tablet-bp) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop-bp) {
+    row-gap: 9px;
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 
 .address-list__link {

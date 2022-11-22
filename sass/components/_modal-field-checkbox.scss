@@ -27,8 +27,13 @@
 
 .checkbox__label {
   position: relative;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.2;
+
+  @media screen and (min-width: $desktop-bp) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .checkbos__terms {

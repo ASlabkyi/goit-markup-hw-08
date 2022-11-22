@@ -1,0 +1,18 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  @include centeredMargin;
+
+  @media screen and (min-width: $mobile-bp) {
+    width: $mobile-bp;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $tablet-bp) {
+    width: $tablet-bp;
+  }
+
+  @media screen and (min-width: $desktop-bp) {
+    width: $desktop-bp;
+  }
+}

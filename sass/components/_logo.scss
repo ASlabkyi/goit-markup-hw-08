@@ -1,11 +1,15 @@
 .logo {
   color: $accent-color;
   font-family: $logo-text-pack;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: $desktop-bp) {
+    font-size: 26px;
+  }
 }
 
 .logo_header-black {
@@ -17,6 +21,11 @@
 }
 
 .logo_footer-margin-botom {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop-bp) {
+    display: block;
+  }
 }

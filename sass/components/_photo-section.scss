@@ -1,7 +1,18 @@
 .photo-section {
+  display: none;
+
+  @media screen and (min-width: $desktop-bp) {
+    display: block;
+  }
+
   padding-bottom: 94px;
   text-align: center;
 }
+
+// .title_photo-section {
+//   font-size: 36px;
+//   margin-bottom: 50px;
+// }
 
 .photo-section__list {
   display: flex;

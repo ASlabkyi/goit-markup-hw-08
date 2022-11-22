@@ -9,6 +9,7 @@
 
 // Components
 
+@import 'components/container';
 @import 'components/header';
 @import 'components/logo';
 @import 'components/header-nav';
@@ -19,13 +20,26 @@
 @import 'components/team';
 @import 'components/team-socials';
 @import 'components/clients';
+
+// Footer
+
 @import 'components/footer';
 @import 'components/footer-addres';
 @import 'components/footer-socials';
 @import 'components/footer-subscribe';
+
+// Portfolio
+
 @import 'components/portfolio';
 @import 'components/portfolio-filter';
 @import 'components/portfolio-list';
+
+// Modal Window
+
 @import 'components/modal';
 @import 'components/modal-field-text';
 @import 'components/modal-field-checkbox';
+
+// Mobile Menu Window
+
+@import 'components/mobile-menu';

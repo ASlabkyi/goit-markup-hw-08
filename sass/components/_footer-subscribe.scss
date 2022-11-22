@@ -1,8 +1,16 @@
 .subscribe-form {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  column-gap: 12px;
+  @media screen and (min-width: $tablet-bp) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop-bp) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 12px;
+  }
 }
 
 .subscribe-form__label {
@@ -12,8 +20,13 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 
   color: $color-white;
+
+  @media screen and (min-width: $desktop-bp) {
+    text-align: left;
+  }
 }
 
 .subscribe-form__label_margin {
@@ -21,7 +34,7 @@
 }
 
 .subscribe-form__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
 
   background-color: inherit;
@@ -30,10 +43,23 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
+
+  @media screen and (min-width: $tablet-bp) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop-bp) {
+    width: 358px;
+  }
 }
 
-.subscribe-form__input-padding {
+.subscribe-form__input-padding-margin {
   padding-left: 16px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop-bp) {
+    margin-bottom: 0;
+  }
 }
 
 .button__footer {
@@ -41,6 +67,11 @@
     background-color: $hero-button-color;
   }
   @include transition(background-color);
+
+  @media screen and (max-width: $desktop-bp) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .button__footer-flex {
